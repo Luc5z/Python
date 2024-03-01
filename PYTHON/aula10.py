@@ -14,5 +14,4 @@ if 20 <= valor < 40: # --> Jeito mais organizado e limpo
 else:
     print('Produto negado')
 
-
 # py aula10.py
