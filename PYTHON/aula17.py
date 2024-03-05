@@ -8,7 +8,7 @@ print()
 structure = 1
 
 for line in range(lines):
-    print((lines)*(' ') + (structure * f' {symbol[0]}'))
+    print((lines -1)*(' ') + (structure * f' {symbol[0]}'))
     lines -= 1
     structure += 1
 print()
