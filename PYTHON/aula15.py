@@ -1,3 +1,4 @@
+
 linhas = input('Quantas linhas? ')
 colunas = input('Quantas colunas? ')
 simbolo =  input('Qual o simbolo?(Sera considerado o primeiro simbolo que digitar) ')
