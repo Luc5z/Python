@@ -5,16 +5,15 @@ inteiro, informe que não é um número inteiro.
 """
 
 numero_str = input('Digite um numero inteiro: ')
-verifica_se_o_numero_é_int = type(numero_str)
-numero_int = int(numero_str)
+verifica_numero = numero_str.isdigit()
 
-if numero_int:
+if verifica_numero:
     if int(numero_str) % 2 == 0:
         print(f'O número {numero_str} é par')
     else:
         print(f'O número {numero_str} não é par')
 else:
-    print('O numero não é um inteiro') 
+    print(f'{numero_str} não é um inteiro') 
 
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
