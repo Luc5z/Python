@@ -1,4 +1,5 @@
-""" Calculadora com while """
+# Calculadora com while
+
 while True:
     numero_1 = input('Digite um número: ')
     numero_2 = input('Digite outro número: ')
@@ -7,7 +8,7 @@ while True:
 
     numeros_validos = None
 
-    try:
+    try: # para nao matar o código se o que o user digitar não for um numero
         num_1_float = float(numero_1)
         num_2_float = float(numero_2)
         numeros_validos = True
