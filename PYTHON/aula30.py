@@ -41,22 +41,22 @@ while True:
     if letra in palavra_secreta: # verifica se o usuário acertou
         letras_acertadas += letra # adiciona aos acertos
 
-    palavra_formada = ''
+    palavra_chute = ''
 
     # loop para formar a pala
     for indice in palavra_secreta: # 'indice' nesse caso será cada letra da palavra secreta
         if indice in letras_acertadas: # se a letra 'x' da palavra 'xyz' foi acertada
-            palavra_formada += indice # adicione ao que ja tem
+            palavra_chute += indice # adicione ao que ja tem
 
         else: # se não
-            palavra_formada += '*' # bote isso no lugar
+            palavra_chute += '*' # bote isso no lugar
 
-    if palavra_formada == palavra_secreta:
+    if palavra_chute == palavra_secreta:
         os.system('clear') # aqui está a utilidade do 'os'. '.system' executa comando no terminal, \
         # nesse caso, limpando com 'clear'
-        print(f'Acertou! "{palavra_formada}" é a palavra secreta')
+        print(f'Acertou! "{palavra_chute}" é a palavra secreta')
         print(f'Tentativas: {tentativas}')
         print()
         break
 
-    print(palavra_formada)
+    print(palavra_chute)
