@@ -7,8 +7,9 @@
 
 * Caso você queira estudar python por esse repositório você pode fazer um fork no seu perfil, baixar os conteudos ou estudar por aqui mesmo.
 
-* Em todos os arquivos contém explicações sobre as coisas novas que fui aprendendo assim como "py aulaX.py" no fim dos arquivos para você executar o arquivo da aula e ver seu resultado, qualquer dúvida pode entrar em contato: 
-
+* Em todos os arquivos contém explicações sobre as coisas novas que fui aprendendo
+* Dica: instale a extensão 'code-runner' para rodar o código python
+  
 [Portfólio online](https://luc5z.github.io)
 
 [Instagram](https://www.instagram.com/lusca404/)
