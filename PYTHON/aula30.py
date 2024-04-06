@@ -19,16 +19,24 @@ usuário.
 
 import os # 'os' é operational system que ja vem no python
 
-palavra_secreta = 'carro'
+palavra_secreta = 'dinheiro'
 letras_acertadas = ''
 tentativas = 0
 
+
+
+
+letras_tentadas = ''
 
 while True:
 
     letra = input('Digite uma letra: ')
 
-    if len(letra) > 1:
+    if len(letra) == '':
+        print('Vazio.')
+        continue
+
+    elif len(letra) > 1:
         print('Digite apenas uma letra.')
         continue
 
@@ -52,7 +60,7 @@ while True:
             palavra_chute += '*' # bote isso no lugar
 
     if palavra_chute == palavra_secreta:
-        os.system('clear') # aqui está a utilidade do 'os'. '.system' executa comando no terminal, \
+        os.system('cls') # aqui está a utilidade do 'os'. '.system' executa comando no terminal, \
         # nesse caso, limpando com 'clear'
         print(f'Acertou! "{palavra_chute}" é a palavra secreta')
         print(f'Tentativas: {tentativas}')
