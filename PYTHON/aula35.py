@@ -55,5 +55,3 @@ while True:
         print('Saindo...')
         print()
         break
-
-
