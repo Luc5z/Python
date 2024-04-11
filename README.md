@@ -1,15 +1,27 @@
-## Python-Study
+<div align="center">
+  <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Logo do Python" width="200" height="200">
+</div>
 
-### Repositório criado com intuito de documentar e organizar meus aprendizados em python seguindo o curso "Programação Python do Zero ao Avançado + Projetos Reais 2024" da Udemy.
+<h1 align="center">Python</h1>
 
+Repositório criado com o intuito de documentar e organizar meus aprendizados em Python seguindo o curso "Programação Python do Zero ao Avançado + Projetos Reais 2024" da Udemy.
 
-##### Nesse repósitorio você vai encontrar meus exercicios de estudos de python com detalhes e explicações sobre tudo que eu aprendo de python
+## Sobre o Repositório
 
-* Caso você queira estudar python por esse repositório você pode fazer um fork no seu perfil, baixar os conteudos ou estudar por aqui mesmo.
+Neste repositório, você encontrará meus exercícios de estudos de Python com detalhes e explicações sobre tudo que eu aprendo de Python. 
 
-* Em todos os arquivos contém explicações sobre as coisas novas que fui aprendendo
-* Dica: instale a extensão 'code-runner' para rodar o código python
-  
-[Portfólio online](https://luc5z.github.io)
+* Caso você queira estudar Python através deste repositório, você pode fazer um fork para o seu perfil, baixar os conteúdos ou estudar por aqui mesmo.
 
-[Instagram](https://www.instagram.com/lusca404/)
+* Todos os arquivos contêm explicações sobre as novas conceitos que fui aprendendo.
+
+**Dica**: instale a extensão 'code-runner' para rodar o código Python.
+
+## Links Úteis
+
+- [Portfólio online](https://luc5z.github.io)
+- [Instagram](https://www.instagram.com/lusca404/)
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você encontrar algum erro ou tiver sugestões de melhorias nos meus exercícios ou explicações, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
