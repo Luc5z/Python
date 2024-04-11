@@ -34,8 +34,16 @@ while True:
         valor = input('O que você deseja apagar? ')
         try:
             toBuyList.pop(int(valor))
-        except:
-            print('Insira um índice válido.')
+        except ValueError:
+            print('Por favot digite um número Int.')
+            print()
+            continue
+        except IndexError:
+            print('Índice não existe na lista.')
+            print()
+            continue
+        except Exception:
+            print('Erro desconhecido.')
             print()
             continue
 
