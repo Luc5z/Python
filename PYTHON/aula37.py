@@ -32,22 +32,18 @@ cpf = cpf.replace('.', '').replace('-', '')
 
 # Algoritmo do cpf (1/2)
 multiplicador = 10
-numeros_multiplicados = []
+soma_total = 0
 
 for numero in cpf[:9]:
     # cpf: 95766762070
-    numero = int(numero)
-    numero_multiplicado = numero * multiplicador
+    soma_total += int(numero) * multiplicador
 
     multiplicador -= 1
 
-    numeros_multiplicados.append(numero_multiplicado)
 
-soma_total = sum(numeros_multiplicados) * 10
+primeiro_numero = (soma_total * 10) % 11
 
-resto_da_divisao_por_11 = soma_total % 11
-
-primeiro_numero = resto_da_divisao_por_11 if resto_da_divisao_por_11 <= 9 else 0
+primeiro_numero = primeiro_numero if primeiro_numero <= 9 else 0
 
 # verificar se o primeiro numero do CPF passado está correto
 
