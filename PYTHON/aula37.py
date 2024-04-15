@@ -26,9 +26,9 @@ O primeiro dígito do CPF é 7
 
 # tratamento do CPF:
 #      012 345 678 9
-cpf = '839.776.000-00'
+cpf = '746.824.890-70'
 
-cpf = cpf.replace('.', '').replace('-', '')
+cpf = cpf.replace('.', '').replace('-', '').replace(' ', '')
 
 # Algoritmo do cpf (1/2)
 multiplicador = 10
