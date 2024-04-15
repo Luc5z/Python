@@ -24,11 +24,24 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """ 
 
+import re # expressão regular
+import sys 
+
 # tratamento do CPF:
 #      012 345 678 9
-cpf = '746.824.890-70'
+print('CPF Validator')
+cpf = input('CPF: ')
+print()
 
-cpf = cpf.replace('.', '').replace('-', '').replace(' ', '')
+cpf = re.sub( r'[^0-9]','' , cpf) # isso filtra qualquer coisa que não seja um número
+
+cpf_repetido = cpf == cpf[0] * len(cpf)
+
+if cpf_repetido:
+    print('Você enviou dados sequenciais')
+    sys.exit()
+
+
 
 # Algoritmo do cpf (1/2)
 multiplicador = 10
@@ -68,6 +81,6 @@ cpf_temp = cpf_temp + str(primeiro_numero) + str(segundo_numero)
 if cpf == cpf_temp:
     print(f'O CPF {cpf} é válido')
 else:
-    print(f'O CPF {cpf} não é válido')
+    print(f'O CPF não é válido')
 
 print()
