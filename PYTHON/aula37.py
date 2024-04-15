@@ -26,7 +26,7 @@ O primeiro dígito do CPF é 7
 
 # tratamento do CPF:
 #      012 345 678 9
-cpf = '957.667.620-70'
+cpf = '839.776.000-00'
 
 cpf = cpf.replace('.', '').replace('-', '')
 
@@ -45,11 +45,29 @@ primeiro_numero = (soma_total * 10) % 11
 
 primeiro_numero = primeiro_numero if primeiro_numero <= 9 else 0
 
-# verificar se o primeiro numero do CPF passado está correto
+# verificar o segundo digito do cpf
 
-if int(cpf[9]) == primeiro_numero:
-    print(f'O primeiro numero está certo! {cpf[9]}')
+multiplicador = 11
+soma_total = 0
+
+for numero in cpf[:10]:
+    # cpf: 95766762070
+    soma_total += int(numero) * multiplicador
+
+    multiplicador -= 1
+
+
+segundo_numero = (soma_total * 10) % 11
+
+segundo_numero = segundo_numero if segundo_numero <= 9 else 0
+
+cpf_temp = cpf[:9]
+cpf_temp = cpf_temp + str(primeiro_numero) + str(segundo_numero)
+
+
+if cpf == cpf_temp:
+    print(f'O CPF {cpf} é válido')
 else:
-    print(f'O primeiro numero não está certo: {primeiro_numero} != {cpf[9]}')
+    print(f'O CPF {cpf} não é válido')
 
 print()
