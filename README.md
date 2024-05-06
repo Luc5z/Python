@@ -14,6 +14,8 @@ Neste repositório, você encontrará meus exercícios de estudos de Python com 
 
 * Todos os arquivos contêm explicações sobre as novas conceitos que fui aprendendo.
 
+* O repositório está estruturado com os assuntos em modulos e alguns exercícios separados (não contém todas as aulas do curso, somente as que eu achei necessárias)
+
 **Dica**: instale a extensão 'code-runner' para rodar o código Python.
 
 ## Links Úteis
