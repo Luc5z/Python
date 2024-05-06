@@ -10,6 +10,7 @@ args - Argumentos não nomeados
 # def soma(x, y):
 #     return x + y
 
+# o *args recebe os valores passados e empacota
 def soma(*args):
     total = 0
     for numero in args:
@@ -24,7 +25,7 @@ soma_4_5_6 = soma(4, 5, 6)
 # print(soma_4_5_6)
 
 numeros = 1, 2, 3, 4, 5, 6, 7, 78, 10
-outra_soma = soma(*numeros)
+outra_soma = soma(*numeros) # o * antes de 'numeros' desempacota
 print(outra_soma)
 
 print(sum(numeros))
