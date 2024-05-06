@@ -1,32 +1,24 @@
-"""
-args - Argumentos não nomeados
-* - *args (empacotamento e desempacotamento)
-"""
-# Lembre-te de desempacotamento
-# x, y, *resto = 1, 2, 3, 4
-# print(x, y, resto)
+# Exercícios com funções
 
+# Crie uma função que multiplica todos os argumentos
+# não nomeados recebidos
+# Retorne o total para uma variável e mostre o valor
+# da variável.
 
-# def soma(x, y):
-#     return x + y
-
-# o *args recebe os valores passados e empacota
 def soma(*args):
-    total = 0
+    total = 1
     for numero in args:
-        total += numero
-    return total
+        total *= numero
+    print(total)
 
+# Crie uma função fala se um número é par ou ímpar.
+# Retorne se o número é par ou ímpar.
 
-soma_1_2_3 = soma(1, 2, 3)
-# print(soma_1_2_3)
+def is_even(number):
+    if number % 2 == 0:
+        return f'O número {number} é par'
 
-soma_4_5_6 = soma(4, 5, 6)
-# print(soma_4_5_6)
+    return f'O número {number} é impar'
 
-numeros = 1, 2, 3, 4, 5, 6, 7, 78, 10
-outra_soma = soma(*numeros) # o * antes de 'numeros' desempacota
-print(outra_soma)
-
-print(sum(numeros))
-# print(*numeros)
+soma(1, 2, 3, 4, 5)
+print(is_even(1))
