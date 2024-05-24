@@ -3,7 +3,7 @@ pessoa = {
     'sobrenome': 'Miranda',
 }
 # valor padrão caso nao exista a chave ou não possua valor:
-pessoa.setdefault('idade', none)
+pessoa.setdefault('idade', None)
 
 # como trabalhar com dicionarios:
 print(list(pessoa.items()))
