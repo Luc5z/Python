@@ -19,14 +19,25 @@ asks = [
     },
 ]
 
-numero = 1
+for pergunta in asks:
+    print('Pergunta:', pergunta['ask'])
+    print()
 
-print(f'Pergunta: {asks[1]["ask"]}')
-print(f'Opções:')
-for option in asks[1]['options']:
-    print(f'{numero}) {option}')
-    numero += 1
+    opcoes = pergunta['options']
+    for i, opcao in enumerate(pergunta['options']):
+        print(f'{i})', opcao)
+    print()
 
+    escolha = input('Escolha uma opção: ')
+
+    acertou = False
+    escolha_int = None
+    qtd_opcoes = len(opcoes)
+
+    if escolha.isdigit():
+        escolha_int = int(escolha)
+
+    if escolha_int != None:
 
 
 
