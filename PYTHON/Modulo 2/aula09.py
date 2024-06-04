@@ -1,5 +1,5 @@
 # Exercício - sistema de perguntas e respostas
-
+import os
 
 asks = [
     {
@@ -19,6 +19,8 @@ asks = [
     },
 ]
 
+resultado = 0
+
 for pergunta in asks:
     print('Pergunta:', pergunta['ask'])
     print()
@@ -26,11 +28,11 @@ for pergunta in asks:
     opcoes = pergunta['options']
     for i, opcao in enumerate(pergunta['options']):
         print(f'{i})', opcao)
+        resposta = pergunta['response']
     print()
 
     escolha = input('Escolha uma opção: ')
 
-    acertou = False
     escolha_int = None
     qtd_opcoes = len(opcoes)
 
@@ -38,11 +40,34 @@ for pergunta in asks:
         escolha_int = int(escolha)
 
     if escolha_int != None:
+        if 0 <= escolha_int < qtd_opcoes:
+            escolha_int = pergunta['options'][escolha_int]
 
+            os.system('cls')
 
+            if escolha_int == resposta:
+                resultado += 1
+
+                print()
+                print('Acertou!')
+                print()
+
+            else: 
+
+                print()
+                print('Errou..')
+                print()
+        else:
+            os.system('cls')
+            print()
+            print('escolha inválida')
+            print()
+            break
+
+print(f'Resultado: {resultado}')
+print()
 
 # reposta = input(f"{asks[1]['options']} ")
 
 # if reposta == asks[1]['response']:
 #     print('acertou')
-
