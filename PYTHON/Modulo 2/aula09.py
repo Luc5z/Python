@@ -66,8 +66,3 @@ for pergunta in asks:
 
 print(f'Resultado: {resultado}')
 print()
-
-# reposta = input(f"{asks[1]['options']} ")
-
-# if reposta == asks[1]['response']:
-#     print('acertou')
