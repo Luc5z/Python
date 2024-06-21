@@ -1,26 +1,42 @@
-# raise - lançando exceções (erros)
-# https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
-def nao_aceito_zero(d):
-    if d == 0:
-        raise ZeroDivisionError('Você está tentando dividir por zero')
-    return True
+# Módulos padrão do Python (import, from, as e *)
+# https://docs.python.org/3/py-modindex.html
+# inteiro - import nome_modulo
+# Vantagens: você tem o namespace do módulo
+# Desvantagens: nomes grandes
+# import sys
+
+# platform = 'A MINHA'
+# print(sys.platform)
+# print(platform)
+
+# partes - from nome_modulo import objeto1, objeto2
+# Vantagens: nomes pequenos
+# Desvantagens: Sem o namespace do módulo
+# from sys import exit, platform
+
+# print(platform)
+
+# alias 1 - import nome_modulo as apelido
+# import sys as s
+
+# sys = 'alguma coisa'
+# print(s.platform)
+# print(sys)
 
 
-def deve_ser_int_ou_float(n):
-    tipo_n = type(n)
-    if not isinstance(n, (float, int)):
-        raise TypeError(
-            f'"{n}" deve ser int ou float. '
-            f'"{tipo_n.__name__}" enviado.'
-        )
-    return True
+# alias 2 - from nome_modulo import objeto as apelido
+# from sys import exit as ex
+# from sys import platform as pf
 
+# print(pf)
 
-def divide(n, d):
-    deve_ser_int_ou_float(n)
-    deve_ser_int_ou_float(d)
-    nao_aceito_zero(d)
-    return n / d
+# Vantagens: você pode reservar nomes para seu código
+# Desvantagens: pode ficar fora do padrão da linguagem
 
+# má prática - from nome_modulo import *
+# Vantagens: importa tudo de um módulo
+# Desvantagens: importa tudo de um módulo
+# from sys import exit, platform
 
-print(divide(8, '0'))
+# print(platform)
+# exit()
