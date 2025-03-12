@@ -4,7 +4,7 @@
 
 <h1 align="center">Python</h1>
 
-Repositório criado com o intuito de documentar e organizar meus aprendizados em Python seguindo o curso "Programação Python do Zero ao Avançado + Projetos Reais 2024" da Udemy.
+Repositório criado com o intuito de documentar e organizar meus aprendizados em Python seguindo o curso "Programação Python do Zero ao Avançado + Projetos Reais 2024".
 
 ## Sobre o Repositório
 
